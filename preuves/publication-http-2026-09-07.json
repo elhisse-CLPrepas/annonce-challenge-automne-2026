@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-09-07T01:41:48.032Z",
+  "url": "https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/",
+  "status": "HTTP_AND_SHA256_MATCH_BUILD",
+  "announcementUrl": "https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/",
+  "resources": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "bytes": 16270,
+      "sha256": "2e79bb05738249df7d387947562618e4736f5df1981718e1cf61f324c97496b0"
+    },
+    {
+      "file": "assets/index-4JVG0Nir.js",
+      "status": 200,
+      "bytes": 3226,
+      "sha256": "2721666ba76bd133e72c6d3788fdb97b2b9d06f8cffe8ffc7f622016282adbbf"
+    },
+    {
+      "file": "assets/index-C8OOODzx.css",
+      "status": 200,
+      "bytes": 11730,
+      "sha256": "9cc17340d66f487c8322d8276f352b4270ea0a2e78776ce8a56ad36ca1987313"
+    },
+    {
+      "file": "images/logo-LN-IA.png",
+      "status": 200,
+      "bytes": 856856,
+      "sha256": "c5deb19a2d80b8c53939844fbdcd3ed80ff5adcdd2f865e77f22ffa176e4c963"
+    },
+    {
+      "file": "images/affiche-offre-challenge-100-jours-automne-2026.png",
+      "status": 200,
+      "bytes": 2089335,
+      "sha256": "14893d99c6f48b905b7d2514a6f09c778cfa47fbcf1deae8a98efc6f741a137a"
+    },
+    {
+      "file": "images/affiche-metiers-automne-2026.png",
+      "status": 200,
+      "bytes": 2910896,
+      "sha256": "26798ef521269fb95550596b9d3bf886557006166f488f256d3248e78062b09c"
+    }
+  ],
+  "limits": [
+    "No browser rendering, keyboard, screen reader or social composer verification by this script."
+  ]
+}

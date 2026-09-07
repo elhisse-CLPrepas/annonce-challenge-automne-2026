@@ -1,6 +1,8 @@
 # Contrôle de livraison — V1
 
-Statut au 7 septembre 2026, après finalisation : page produite et contrôlée automatiquement ; validation visuelle humaine et publication non effectuées. Voir `docs/FINALISATION-2026-09-07.md` pour le détail du dernier lot.
+Mise à jour après publication : accord visuel et autorisation du pilote reçus ; sources poussées sur `main` et compilation publiée sur `gh-pages`. Le contrôle HTTP final du 7 septembre 2026 à 01:41 UTC confirme la page et toutes ses ressources. Voir [le rapport de publication](PUBLICATION-2026-09-07.md) pour les commits, preuves et limites actuels.
+
+Les sections ci-dessous conservent le contrôle historique après finalisation, avant commit et publication. Elles ne décrivent pas le statut actuel de mise en ligne. Voir `docs/FINALISATION-2026-09-07.md` pour le détail de ce lot antérieur.
 
 ## Contrôles réellement exécutés
 
