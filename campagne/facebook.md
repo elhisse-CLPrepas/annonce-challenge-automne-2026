@@ -14,7 +14,7 @@ Un support pédagogique, une page d’offre, un dossier projet ou une procédure
 Votre métier. Votre projet. Vos productions.
 
 Découvrez le parcours et présentez votre besoin :
-https://elhisse-clprepas.github.io/offre-formation-ia/?utm_source=facebook&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1
+https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/?utm_source=facebook&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1
 
 Apprendre en produisant. Produire avec méthode. Partager avec valeur. Avancer avec conscience.
 

@@ -1,14 +1,14 @@
 # Campagne — liens et diffusion
 
-Destination effective : https://elhisse-clprepas.github.io/offre-formation-ia/
+Destination effective : https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/
 
-Statut : Annonce non publiée. Les messages utilisent l’offre existante.
+Statut : URL d’annonce configurée ; vérifier sa publication réelle.
 
 | Canal | Lien d’entrée |
 |---|---|
-| whatsapp | https://elhisse-clprepas.github.io/offre-formation-ia/?utm_source=whatsapp&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1 |
-| facebook | https://elhisse-clprepas.github.io/offre-formation-ia/?utm_source=facebook&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1 |
-| linkedin | https://elhisse-clprepas.github.io/offre-formation-ia/?utm_source=linkedin&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1 |
+| whatsapp | https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/?utm_source=whatsapp&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1 |
+| facebook | https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/?utm_source=facebook&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1 |
+| linkedin | https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/?utm_source=linkedin&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1 |
 
 Les UTM distinguent l’origine des clics. Aucun outil de mesure n’est installé dans ce pack : ils ne constituent pas des statistiques de fréquentation. Ne jamais y placer de données personnelles.
 

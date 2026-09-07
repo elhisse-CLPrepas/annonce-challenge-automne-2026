@@ -142,6 +142,6 @@ test('une page sans liens facultatifs et un partage isolé sont acceptés', () =
   assert.ok(linkedin);
   assert.doesNotThrow(() => applyCampaignLinks(linkRoot([linkedin]), campaign));
   const target = new URL(new URL(linkedin.href).searchParams.get('url'));
-  assert.equal(destination(target.href), campaign.offerUrl);
+  assert.equal(destination(target.href), campaign.announcementUrl || campaign.offerUrl);
   assert.equal(target.searchParams.get('utm_source'), 'linkedin');
 });

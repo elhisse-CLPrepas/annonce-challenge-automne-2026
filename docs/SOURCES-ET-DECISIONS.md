@@ -86,3 +86,11 @@ Source : fichier `logo-LN-IA.png` fourni par le pilote, 1774 × 887 pixels. Copi
 Le pilote a autorisé le commit et choisi `https://github.com/elhisse-CLPrepas/annonce-challenge-automne-2026.git`. La lecture `git ls-remote` a réussi sans retourner de branche : aucun historique distant à reprendre au moment de cette vérification. Le dossier local est initialisé sur `main` et ce dépôt est configuré comme `origin`.
 
 Cette décision remplace la proposition initiale d’hébergement sous l’offre. L’adresse prévue devient `https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/`, consignée dans `proposedAnnouncementUrl`. `announcementUrl` reste nul jusqu’à la mise en ligne vérifiée. L’offre commerciale et le portfolio conservent leurs adresses. Aucun push, réglage Pages ou déploiement n’est inclus dans le commit local.
+
+## Publication autorisée — 7 septembre 2026
+
+Le pilote a explicitement demandé le push de `main`, puis la publication des fichiers compilés sur `gh-pages`. Son message est retenu comme accord visuel, sans lui attribuer une recette détaillée par appareil.
+
+Le commit initial `6507fba` est poussé sur `main`. La branche isolée `gh-pages` reçoit sept fichiers : HTML compilé, CSS, JavaScript, trois images utilisées et `.nojekyll`. Le premier commit public est `5db31b9`. GitHub a activé Pages lors du push de cette branche ; l’API confirme une source `gh-pages` à la racine, de type `legacy`. Aucun workflow personnalisé n’a été ajouté.
+
+Le 7 septembre 2026 à 01:39 UTC, les six ressources de la page publique répondent HTTP 200 et leurs empreintes SHA-256 correspondent à `dist/`. Cette vérification permet de renseigner `announcementUrl` et d’activer canonical, `og:url` et les liens de campagne vers l’annonce. Les entrées précédentes décrivent les étapes historiques ; elles ne signifient plus que le site est non publié. Le rapport de publication consigne les références et les limites du contrôle final.

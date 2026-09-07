@@ -1,6 +1,6 @@
 {
   "status": "CONTROLES_STATIQUES_REUSSIS",
-  "executedAt": "2026-09-07T01:31:47.734Z",
+  "executedAt": "2026-09-07T01:40:42.607Z",
   "node": "v24.12.0",
   "checks": [
     "HTML français",
@@ -17,8 +17,8 @@
   "localResources": [
     {
       "attribute": "src",
-      "resource": "./assets/index-CZsZSpR9.js",
-      "bytes": 3164
+      "resource": "./assets/index-4JVG0Nir.js",
+      "bytes": 3226
     },
     {
       "attribute": "href",

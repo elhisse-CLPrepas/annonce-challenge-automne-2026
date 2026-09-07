@@ -1,56 +1,41 @@
-# GitHub Pages — dépôt séparé, publication à effectuer
+# GitHub Pages — annonce publiée dans un dépôt séparé
 
-## Destination retenue
+## Configuration effective
 
-Le pilote a choisi `https://github.com/elhisse-CLPrepas/annonce-challenge-automne-2026.git` pour les sources de cette annonce.
+- Dépôt : https://github.com/elhisse-CLPrepas/annonce-challenge-automne-2026
+- Site : https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/
+- `main` : sources Vite, configuration, images, tests et documentation.
+- `gh-pages`, dossier `/` : HTML compilé, CSS, JavaScript, trois images utilisées et `.nojekyll`.
+- Mode Pages : `legacy`, publication depuis la branche. Aucun fichier de workflow personnalisé ajouté.
 
-Adresse prévue, à vérifier après déploiement :
+Le pilote a autorisé le push et la publication le 7 septembre 2026. Son message est retenu comme accord visuel, sans attester une liste d’appareils ou une recette d’accessibilité détaillée. Les sites de l’offre et du portfolio conservent leurs fichiers et leurs réglages.
 
-```text
-https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/
-```
+## Première publication vérifiée
 
-L’offre reste à `https://elhisse-clprepas.github.io/offre-formation-ia/` et le portfolio conserve son adresse. La proposition initiale d’un sous-dossier dans le dépôt de l’offre est abandonnée. Aucun fichier ni réglage de ces deux sites n’est à modifier.
+Les sources initiales `6507fba` sont poussées sur `main`. La première version compilée correspond à `5db31b9` sur `gh-pages`. Pages s’est activé lors du push ; la tentative de création par API a répondu « already enabled », puis la lecture a confirmé `gh-pages` à la racine et le statut `built`.
 
-## Séparer les sources et la publication
+Le 7 septembre 2026 à 01:39 UTC, la page et ses cinq ressources uniques ont répondu HTTP 200. Leurs empreintes SHA-256 correspondent aux fichiers compilés locaux. Le HTML comporte les deux occurrences du logo LN-IA. Ce contrôle autorise l’activation de `announcementUrl`, de canonical, de `og:url` et des messages de campagne vers l’annonce.
 
-- `main` contient les sources Vite, les images, les tests et les documents.
-- `dist/` est généré et exclu du commit des sources.
-- La racine de `main` contient le HTML source : elle ne doit pas être sélectionnée comme site statique sans compilation.
-- Aucun workflow de publication automatique n’est ajouté.
+La vérification finale et les références de la version avec partage activé sont consignées dans `docs/PUBLICATION-2026-09-07.md` et `preuves/publication-http-2026-09-07.json` après déploiement.
 
-Pour la prochaine étape, une branche dédiée `gh-pages` contenant uniquement le contenu compilé est proposée, avec publication depuis sa racine. Ce choix de configuration et son activation restent à effectuer sur instruction de déploiement. Un push sur la branche choisie pour Pages peut publier immédiatement.
+## Effectuer une prochaine mise à jour
 
-Référence : [sources de publication GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+1. Obtenir l’instruction correspondante de modification, commit, push et publication ; inspecter les branches locales et distantes pour préserver les travaux existants.
+2. Installer depuis le lockfile avec `npm ci`, puis exécuter `npm run ci`. Sous PowerShell, utiliser `npm.cmd` si nécessaire. Node.js 24 est la référence.
+3. Contrôler le résultat avec `npm run preview` et effectuer la recette visuelle prévue. Une compilation réussie ne prouve pas le rendu navigateur.
+4. Committer les sources et rapports concernés sur `main`, puis pousser cette branche. Un push de `main` seul ne met pas le site à jour.
+5. Dans un checkout isolé de `gh-pages`, remplacer uniquement les fichiers publiés par le nouveau contenu compilé : `index.html` à la racine, les fichiers référencés de `assets/` et les trois images utilisées. Conserver `.nojekyll`, retirer les anciens fichiers compilés devenus inutiles. Ne pas copier un dossier `dist/` imbriqué, les sources, les documents ou les journaux.
+6. Vérifier le diff, committer en citant le commit source, puis pousser `gh-pages` sans forcer. Ce push déclenche la publication GitHub Pages de cette branche.
+7. Attendre le succès de Pages pour ce commit, puis vérifier la page publique et chaque ressource, leurs empreintes et les métadonnées. Consigner les résultats réels.
 
-## Étapes de publication proposées, non exécutées
+`base: './'` conserve des chemins relatifs adaptés au sous-chemin GitHub Pages. `dist/` reste ignoré dans les sources et ne doit pas être modifié manuellement. Le checkout local `.preparation-commit/gh-pages` est ignoré ; il n’est pas une seconde copie des sources à éditer.
 
-1. Relire le commit local, vérifier `origin` et l’absence de divergence distante, puis pousser les sources vers `main` après instruction correspondante.
-2. Lire les réglages Pages du **nouveau dépôt** ; ne pas réutiliser ceux du dépôt de l’offre, qui avait été examiné pendant l’audit initial.
-3. Reconstruire avec `npm ci` puis `npm run ci` (ou `npm.cmd` sous PowerShell). Vérifier l’aperçu et la recette humaine.
-4. Préparer une branche de publication dans un checkout isolé. Y placer le contenu compilé, avec `index.html` à la racine, `assets/` et les images utilisées. Exclure sources, rapports, journaux, secrets et `node_modules/`. Ne pas copier un dossier `dist` imbriqué. Prévoir `.nojekyll` pour servir les fichiers statiques sans traitement Jekyll.
-5. Après instruction de déploiement, pousser cette branche et configurer Pages sur `gh-pages`, dossier `/`, si le choix proposé est retenu. Conserver le commit publié pour permettre un retour contrôlé à la version précédente.
-6. Vérifier l’URL publique, CSS, JavaScript, deux affiches, logo et liens. Ne pas déclarer la publication réussie sur la seule base du push.
+Pour un retour à une version antérieure, préparer un nouveau commit rétablissant les fichiers compilés de la version retenue, après instruction du pilote. Conserver l’historique et éviter les pushes forcés.
 
-`base: './'` conserve des chemins relatifs adaptés au sous-chemin du dépôt GitHub Pages. Aucune étape de cette procédure n’est exécutée par la simple création du commit des sources.
+## Limites et contrôles humains
 
-## Activer les partages de l’annonce après vérification
+L’accord visuel du pilote ne constitue pas une preuve de vérification par l’agent sur mobile, tablette, clavier, zoom 200 % ou lecteur d’écran. Les composeurs et aperçus sociaux n’ont pas été vérifiés en situation. Aucun `og:image` dédié n’est configuré. Aucun message n’a été envoyé sur les réseaux sociaux.
 
-La première publication conserve `announcementUrl: null` : les partages pointent vers l’offre existante. Après vérification de l’annonce publique :
+Les rapports précédents restent l’historique des étapes avant publication ; le rapport de publication indique l’état le plus récent. `preuves/controle-statique.json` décrit uniquement le périmètre du script statique, pas la totalité des contrôles de livraison.
 
-1. Renseigner son URL HTTPS confirmée dans `config/campaign.json`, sans paramètres ni fragment.
-2. Relancer `npm run ci` pour générer canonical, `og:url`, liens et messages de campagne.
-3. Vérifier ces valeurs, puis committer et publier la mise à jour sur instruction correspondante.
-
-`proposedAnnouncementUrl` est uniquement documentaire. Sa valeur ne prouve aucune publication. Aucun `og:image` dédié n’est configuré ; les affiches peuvent être jointes manuellement aux publications après vérification des aperçus.
-
-## Recette à consigner
-
-- Automne 2026, départ vendredi 25 septembre 2026.
-- Ressources sans erreur et logos lisibles en haut et en bas.
-- Découverte vers le début de l’offre, candidature vers `#candidature`, programme vers `#programme`.
-- Preuves vers les ancres du portfolio ; invitation My-Community-IA intacte.
-- Rendu à 320/360 px, tablette, ordinateur, clavier et zoom 200 %.
-- Composeurs sociaux et aperçu de partage vérifiés sans envoi automatique.
-
-Le rapport doit distinguer le commit local, le push des sources, la publication des fichiers compilés, le contrôle HTTP public et la validation humaine. À ce stade, le déploiement reste à effectuer.
+Références : [configuration de la source Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), [API Pages](https://docs.github.com/en/rest/pages/pages).

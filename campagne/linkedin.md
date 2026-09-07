@@ -20,7 +20,7 @@ Codex, VS Code, Git et GitHub sont au service de vos projets. L’IA assiste. L�
 
 Quel besoin de votre activité souhaitez-vous transformer en une première réalisation concrète ?
 Découvrez la formation et présentez votre besoin :
-https://elhisse-clprepas.github.io/offre-formation-ia/?utm_source=linkedin&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1
+https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/?utm_source=linkedin&utm_medium=organic&utm_campaign=challenge_100j_automne_2026&utm_content=pratique_v1
 
 Prof. Abderrahman EL HISSE
 LAB-NUMÉRIQUE-IA

@@ -1,10 +1,10 @@
 # Challenge 100 Jours — pack d’annonce Automne 2026
 
-Une page Vite déjà construite, deux affiches affichées et une ancienne conservée, trois messages de campagne et un prompt maître pour poursuivre avec Codex. Départ : vendredi 25 septembre 2026. Version : V1 à valider humainement.
+Une page Vite publiée, deux affiches affichées et une ancienne conservée, trois messages de campagne et un prompt maître pour poursuivre avec Codex. Départ : vendredi 25 septembre 2026. Version : V1 publiée le 7 septembre 2026, après accord visuel et autorisation du pilote.
 
 ## Commencer
 
-1. Cloner `https://github.com/elhisse-CLPrepas/annonce-challenge-automne-2026.git` après le push initial, ou utiliser le dossier du pack local.
+1. Cloner `https://github.com/elhisse-CLPrepas/annonce-challenge-automne-2026.git`, ou utiliser le dossier du pack local.
 2. Ouvrir ce dossier dans VS Code, puis son terminal.
 3. Installer Node.js 24 LTS si nécessaire ; contrôler `node --version` et `npm --version`.
 4. Lancer les commandes suivantes, sous Windows, macOS ou Linux :
@@ -60,15 +60,14 @@ Vite 8.0.16 est verrouillé dans `package-lock.json`. L’application utilise HT
 La page d’offre reste la destination commerciale :
 https://elhisse-clprepas.github.io/offre-formation-ia/
 
-L’annonce est une porte d’entrée depuis les réseaux sociaux, maintenue dans le dépôt séparé `elhisse-CLPrepas/annonce-challenge-automne-2026`. Emplacement prévu, non publié :
-`https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/`
+L’annonce est une porte d’entrée depuis les réseaux sociaux, maintenue dans le dépôt séparé `elhisse-CLPrepas/annonce-challenge-automne-2026`. [Ouvrir l’annonce publiée](https://elhisse-clprepas.github.io/annonce-challenge-automne-2026/).
 
-Le dépôt contient les sources Vite. Le site de l’offre reste inchangé. La compilation ne publie rien ; lire `docs/DEPLOIEMENT-GITHUB-PAGES.md` pour la prochaine étape.
+La branche `main` contient les sources Vite ; `gh-pages` contient les fichiers compilés servis par GitHub Pages depuis sa racine. Le site de l’offre reste inchangé. La compilation locale ne publie rien ; lire `docs/DEPLOIEMENT-GITHUB-PAGES.md` pour les prochaines mises à jour.
 
 ## Réglages importants
 
-- `announcementUrl: null` est volontaire : les partages utilisent l’offre existante tant que l’annonce n’est pas réellement en ligne.
-- Après validation de l’adresse et de la publication, renseigner une URL HTTPS complète dans ce champ et relancer `npm run ci`.
+- `announcementUrl` contient l’adresse HTTPS de l’annonce, vérifiée après la première publication. Les partages et messages générés utilisent cette destination.
+- Toute modification de cette adresse exige une vérification publique et une nouvelle exécution de `npm run ci`.
 - `proposedAnnouncementUrl` est une proposition documentaire, jamais un lien activé automatiquement.
 - Les dates visibles dans le HTML et les textes éditoriaux sont propres à cette session. Ce pack n’est pas un générateur universel de sessions : changer de date exige de relire la page, les affiches, les scripts et les tests. `startDate` est la date de contrôle ; `dateLabel` alimente le partage WhatsApp.
 - Les canaux acceptés sont volontairement limités à WhatsApp, Facebook, LinkedIn et visite directe. Ajouter un canal exige d’adapter et tester `src/links.js`.
@@ -79,7 +78,7 @@ Les conditions, tarifs et horaires précis ne sont pas inventés. Rejoindre la c
 
 ## Avant diffusion
 
-La compilation et les contrôles statiques sont fournis. La recette visuelle sur mobile, clavier et zoom, les destinations externes et les composeurs de partage restent à vérifier par une personne. Voir `docs/CONTROLE-LIVRAISON.md`.
+Le pilote a donné son accord visuel et autorisé la publication le 7 septembre 2026. Les contrôles automatiques et HTTP sont consignés dans le rapport de publication. Cet accord ne détaille pas les appareils testés : clavier, zoom, lecteur d’écran et composeurs de partage ne sont pas déclarés vérifiés. Voir `docs/CONTROLE-LIVRAISON.md` et `docs/DEPLOIEMENT-GITHUB-PAGES.md`.
 
 Les affiches jointes peuvent accompagner vos publications manuelles. Aucune vignette automatique `og:image` n’a été créée ni configurée ; son éventuelle création et sa validation constituent une demande distincte. Le rendu des aperçus sociaux n’est pas garanti par ce pack.
 
