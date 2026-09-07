@@ -1,0 +1,53 @@
+{
+  "status": "CONTROLES_STATIQUES_REUSSIS",
+  "executedAt": "2026-09-07T00:20:33.661Z",
+  "node": "v24.12.0",
+  "checks": [
+    "HTML français",
+    "h1 unique",
+    "date de relance",
+    "identifiants uniques",
+    "ancres internes",
+    "ressources locales présentes",
+    "chemins relatifs",
+    "images avec alt et dimensions",
+    "URL canonique conditionnelle",
+    "absence des anciennes dates et tarifs vérifiés par motif"
+  ],
+  "localResources": [
+    {
+      "attribute": "src",
+      "resource": "./assets/index-C_ASP950.js",
+      "bytes": 3172
+    },
+    {
+      "attribute": "href",
+      "resource": "./assets/index-BoHr2RMp.css",
+      "bytes": 11208
+    },
+    {
+      "attribute": "src",
+      "resource": "./images/affiche-astra-codex.png",
+      "bytes": 571936
+    },
+    {
+      "attribute": "href",
+      "resource": "./images/affiche-metiers-automne-2026.png",
+      "bytes": 2910896
+    },
+    {
+      "attribute": "src",
+      "resource": "./images/affiche-metiers-automne-2026.png",
+      "bytes": 2910896
+    }
+  ],
+  "notTested": [
+    "rendu navigateur",
+    "clavier et lecteur d’écran en situation",
+    "réponses HTTP externes",
+    "ouverture réelle des composeurs sociaux",
+    "aperçus sociaux",
+    "publication GitHub Pages"
+  ],
+  "humanValidation": "A_EFFECTUER"
+}

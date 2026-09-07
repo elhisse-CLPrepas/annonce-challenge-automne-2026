@@ -1,0 +1,22 @@
+{
+  "name": "ln-ia-annonce-automne-2026",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.13.0 || >=24.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node --check src/main.js && node --check src/page-links.js && node --check src/links.js && node --check vite.config.js",
+    "test": "node --test tests/*.test.mjs",
+    "campaign": "node scripts/generate-campaign.mjs",
+    "validate:dist": "node scripts/validate-dist.mjs",
+    "ci": "npm run check && npm test && npm run build && npm run validate:dist && npm run campaign"
+  },
+  "devDependencies": {
+    "vite": "8.0.16"
+  }
+}

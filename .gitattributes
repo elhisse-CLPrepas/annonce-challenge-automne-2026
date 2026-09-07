@@ -1,0 +1,8 @@
+# Fins de ligne stables pour des diffs lisibles sur Windows et Linux.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.pdf binary
+*.zip binary

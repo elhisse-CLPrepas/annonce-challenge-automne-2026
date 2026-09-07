@@ -1,0 +1,63 @@
+{
+  "status": "CONTROLES_STATIQUES_REUSSIS",
+  "executedAt": "2026-09-07T01:31:47.734Z",
+  "node": "v24.12.0",
+  "checks": [
+    "HTML français",
+    "h1 unique",
+    "date de relance",
+    "identifiants uniques",
+    "ancres internes",
+    "ressources locales présentes",
+    "chemins relatifs",
+    "images avec alt et dimensions",
+    "URL canonique conditionnelle",
+    "absence des anciennes dates et tarifs vérifiés par motif"
+  ],
+  "localResources": [
+    {
+      "attribute": "src",
+      "resource": "./assets/index-CZsZSpR9.js",
+      "bytes": 3164
+    },
+    {
+      "attribute": "href",
+      "resource": "./assets/index-C8OOODzx.css",
+      "bytes": 11730
+    },
+    {
+      "attribute": "src",
+      "resource": "./images/logo-LN-IA.png",
+      "bytes": 856856
+    },
+    {
+      "attribute": "src",
+      "resource": "./images/affiche-offre-challenge-100-jours-automne-2026.png",
+      "bytes": 2089335
+    },
+    {
+      "attribute": "href",
+      "resource": "./images/affiche-metiers-automne-2026.png",
+      "bytes": 2910896
+    },
+    {
+      "attribute": "src",
+      "resource": "./images/affiche-metiers-automne-2026.png",
+      "bytes": 2910896
+    },
+    {
+      "attribute": "src",
+      "resource": "./images/logo-LN-IA.png",
+      "bytes": 856856
+    }
+  ],
+  "notTested": [
+    "rendu navigateur",
+    "clavier et lecteur d’écran en situation",
+    "réponses HTTP externes",
+    "ouverture réelle des composeurs sociaux",
+    "aperçus sociaux",
+    "publication GitHub Pages"
+  ],
+  "humanValidation": "A_EFFECTUER"
+}

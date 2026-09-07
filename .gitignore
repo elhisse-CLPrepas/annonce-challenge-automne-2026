@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# Copies locales et préparations : conserver les fichiers, sans les versionner.
+/logo-LN-IA.png
+/.preparation-commit/
+/.audit-*/
+/.npm-cache/
+/preuves/local/
+
+# Journaux d’installation contenant des chemins propres à la machine.
+/preuves/audit-2026-09-07-installation-npm.txt
+
+# Fichiers temporaires des éditeurs et du système.
+Thumbs.db
+Desktop.ini
+*.tmp
+*.swp
